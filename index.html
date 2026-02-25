@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Shree Padmavati Krushi Aushadi Kendra | Agricultural Supplies</title>
+<meta name="description" content="Quality seeds, fertilizers, pesticides & agricultural solutions in Gandhinagar, M K Hubli, Karnataka." />
+<meta property="og:title" content="Shree Padmavati Krushi Aushadi Kendra" />
+<meta property="og:description" content="Your trusted agricultural partner in M K Hubli, Karnataka." />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid #e5e0d5; }
+:root {
+  --bg: #f7f5f0; --fg: #1a2e1f; --card: #f0ede5; --card-fg: #1a2e1f;
+  --primary: #2a6b3a; --primary-fg: #f7f5f0; --secondary: #b8843a; --secondary-fg: #f7f5f0;
+  --muted: #e5e0d5; --muted-fg: #5a6b5e; --border: #d4cfc3; --radius: 0.75rem;
+  --font-display: 'Playfair Display', serif; --font-body: 'Source Sans 3', sans-serif;
+}
+body { background: var(--bg); color: var(--fg); font-family: var(--font-body); line-height: 1.6; }
+h1,h2,h3,h4,h5,h6 { font-family: var(--font-display); }
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+/* Navbar */
+.navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 50; background: rgba(247,245,240,0.8); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+.navbar-inner { max-width: 1200px; margin: 0 auto; padding: 1rem; display: flex; align-items: center; justify-content: space-between; }
+.logo-circle { width: 40px; height: 40px; border-radius: 50%; background: var(--primary); display: flex; align-items: center; justify-content: center; color: var(--primary-fg); font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; }
+.logo-wrap { display: flex; align-items: center; gap: 0.75rem; }
+.logo-text h1 { font-size: 1.1rem; font-weight: 700; line-height: 1.2; }
+.logo-text p { font-size: 0.75rem; color: var(--muted-fg); }
+.nav-links { display: none; gap: 2rem; font-size: 0.875rem; font-weight: 500; }
+.nav-links a { color: var(--muted-fg); transition: color 0.2s; }
+.nav-links a:hover { color: var(--primary); }
+.nav-actions { display: flex; align-items: center; gap: 0.75rem; }
+.lang-btn { display: flex; align-items: center; gap: 0.375rem; background: var(--muted); padding: 0.375rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; cursor: pointer; border: none; font-family: var(--font-body); color: var(--fg); }
+.lang-btn .inactive { opacity: 0.5; }
+.call-btn { display: flex; align-items: center; gap: 0.5rem; background: var(--primary); color: var(--primary-fg); padding: 0.5rem 1rem; border-radius: 0.5rem; font-size: 0.875rem; font-weight: 500; transition: opacity 0.2s; }
+.call-btn:hover { opacity: 0.9; }
+.call-btn .call-text { display: none; }
+@media(min-width:768px) { .nav-links { display: flex; } .call-btn .call-text { display: inline; } }
+/* Hero */
+.hero { position: relative; min-height: 90vh; display: flex; align-items: center; overflow: hidden; background: #1a2e1f; }
+.hero-bg { position: absolute; inset: 0; background: linear-gradient(135deg, #1a2e1f 0%, #2a6b3a 50%, #1a2e1f 100%); }
+.hero-overlay { position: absolute; inset: 0; background: rgba(26,46,31,0.6); }
+.hero-content { position: relative; max-width: 1200px; margin: 0 auto; padding: 8rem 1rem 4rem; text-align: center; width: 100%; }
+.hero-tag { color: var(--secondary); font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; font-size: 0.875rem; margin-bottom: 1rem; }
+.hero-title { font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 700; color: var(--primary-fg); margin-bottom: 1.5rem; line-height: 1.1; }
+.hero-title span { color: var(--secondary); }
+.hero-desc { color: rgba(247,245,240,0.8); font-size: 1.125rem; max-width: 640px; margin: 0 auto 2.5rem; }
+.hero-btns { display: flex; flex-direction: column; gap: 1rem; justify-content: center; align-items: center; }
+.btn-primary { background: var(--primary); color: var(--primary-fg); padding: 1rem 2rem; border-radius: 0.5rem; font-weight: 600; font-size: 1.125rem; font-family: var(--font-body); transition: opacity 0.2s; border: none; cursor: pointer; }
+.btn-primary:hover { opacity: 0.9; }
+.btn-outline { border: 2px solid rgba(247,245,240,0.3); color: var(--primary-fg); padding: 1rem 2rem; border-radius: 0.5rem; font-weight: 600; font-size: 1.125rem; font-family: var(--font-body); background: transparent; cursor: pointer; transition: background 0.2s; }
+.btn-outline:hover { background: rgba(247,245,240,0.1); }
+@media(min-width:640px) { .hero-btns { flex-direction: row; } }
+/* Stats */
+.stats { background: var(--primary); }
+.stats-inner { max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+.stat-item { text-align: center; }
+.stat-value { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--primary-fg); }
+.stat-label { font-size: 0.875rem; color: rgba(247,245,240,0.7); margin-top: 0.25rem; }
+@media(min-width:768px) { .stats-inner { grid-template-columns: repeat(4, 1fr); } .stat-value { font-size: 1.875rem; } }
+/* Section common */
+.section { padding: 5rem 0; }
+.section-alt { background: var(--card); }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+.section-header { text-align: center; margin-bottom: 4rem; }
+.section-tag { color: var(--secondary); font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; font-size: 0.875rem; margin-bottom: 0.75rem; }
+.section-title { font-size: clamp(1.875rem, 4vw, 3rem); font-weight: 700; }
+/* Products */
+.products-grid { display: grid; gap: 2rem; }
+@media(min-width:768px) { .products-grid { grid-template-columns: repeat(3, 1fr); } }
+.product-card { background: var(--card); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); transition: box-shadow 0.3s; }
+.product-card:hover { box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+.product-img { height: 14rem; overflow: hidden; background: var(--muted); display: flex; align-items: center; justify-content: center; }
+.product-img span { font-size: 3rem; }
+.product-body { padding: 1.5rem; }
+.product-body h3 { font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; }
+.product-body p { color: var(--muted-fg); line-height: 1.7; }
+/* About */
+.about-content { max-width: 48rem; margin: 0 auto; text-align: center; }
+.about-content p { color: var(--muted-fg); font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; }
+/* Contact */
+.contact-grid { display: grid; gap: 2rem; max-width: 56rem; margin: 0 auto; }
+@media(min-width:768px) { .contact-grid { grid-template-columns: repeat(3, 1fr); } }
+.contact-card { background: var(--card); border-radius: var(--radius); padding: 2rem; text-align: center; border: 1px solid var(--border); }
+.contact-icon { width: 3.5rem; height: 3.5rem; border-radius: 50%; background: rgba(42,107,58,0.1); display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; }
+.contact-icon svg { width: 1.5rem; height: 1.5rem; color: var(--primary); stroke: var(--primary); fill: none; }
+.contact-card h3 { font-size: 1.125rem; font-weight: 700; margin-bottom: 0.5rem; }
+.contact-card p, .contact-card a { color: var(--muted-fg); font-size: 0.875rem; line-height: 1.7; white-space: pre-line; }
+.contact-card a:hover { color: var(--primary); }
+.map-wrap { margin-top: 3rem; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); max-width: 56rem; margin-left: auto; margin-right: auto; }
+/* Footer */
+.footer { background: var(--fg); padding: 3rem 0; text-align: center; }
+.footer h3 { font-size: 1.25rem; font-weight: 700; color: var(--bg); margin-bottom: 0.5rem; }
+.footer .tagline { color: rgba(247,245,240,0.6); font-size: 0.875rem; margin-bottom: 1.5rem; }
+.footer .copy { color: rgba(247,245,240,0.4); font-size: 0.75rem; }
+/* WhatsApp FAB */
+.whatsapp-fab { position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 50; width: 3.5rem; height: 3.5rem; border-radius: 50%; background: #25D366; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.2); transition: transform 0.2s; border: none; cursor: pointer; }
+.whatsapp-fab:hover { transform: scale(1.1); }
+.whatsapp-fab svg { width: 1.75rem; height: 1.75rem; fill: white; }
+/* Animations */
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+.animate-in { animation: fadeInUp 0.6s ease-out forwards; }
+</style>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <div class="logo-wrap">
+      <div class="logo-circle">श्री</div>
+      <div class="logo-text">
+        <h1 data-i18n="heroTitle1">Shree Padmavati</h1>
+        <p data-i18n="heroTitle2">Krushi Aushadi Kendra</p>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="#products" data-i18n="products">Products</a>
+      <a href="#about" data-i18n="about">About</a>
+      <a href="#contact" data-i18n="contact">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <button class="lang-btn" id="langBtn" onclick="toggleLang()">
+        <span id="enLabel">EN</span>
+        <span style="color:var(--muted-fg)">/</span>
+        <span id="knLabel" class="inactive">ಕನ್ನಡ</span>
+      </button>
+      <a href="tel:+918550047165" class="call-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="call-text" data-i18n="callNow">Call Now</span>
+      </a>
+    </div>
+  </div>
+</nav>
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content animate-in">
+    <p class="hero-tag" data-i18n="tagline">Your Trusted Agricultural Partner</p>
+    <h1 class="hero-title"><span data-i18n="heroTitle1">Shree Padmavati</span><br><span data-i18n="heroTitle2">Krushi Aushadi Kendra</span></h1>
+    <p class="hero-desc" data-i18n="heroDesc">Quality seeds, fertilizers, pesticides &amp; agricultural solutions for farmers in Gandhinagar, M K Hubli &amp; surrounding areas.</p>
+    <div class="hero-btns">
+      <a href="#products" class="btn-primary" data-i18n="exploreProducts">Explore Products</a>
+      <a href="#contact" class="btn-outline" data-i18n="visitUs">Visit Us</a>
+    </div>
+  </div>
+</section>
+<!-- Stats -->
+<section class="stats">
+  <div class="stats-inner">
+    <div class="stat-item"><p class="stat-value">5.0 ★</p><p class="stat-label" data-i18n="googleRating">Google Rating</p></div>
+    <div class="stat-item"><p class="stat-value">15+</p><p class="stat-label" data-i18n="happyReviews">Happy Reviews</p></div>
+    <div class="stat-item"><p class="stat-value">7 AM–9 PM</p><p class="stat-label" data-i18n="openDaily">Open Daily</p></div>
+    <div class="stat-item"><p class="stat-value">NH 4</p><p class="stat-label" data-i18n="serviceRoad">Service Road</p></div>
+  </div>
+</section>
+<!-- Products -->
+<section id="products" class="section">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-tag" data-i18n="whatWeOffer">What We Offer</p>
+      <h2 class="section-title" data-i18n="ourProducts">Our Products</h2>
+    </div>
+    <div class="products-grid">
+      <div class="product-card">
+        <div class="product-img"><span>🌾</span></div>
+        <div class="product-body">
+          <h3 data-i18n="seedsTitle">Seeds &amp; Planting</h3>
+          <p data-i18n="seedsDesc">High-quality certified seeds for all major crops — paddy, wheat, pulses, vegetables and more.</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img"><span>🧪</span></div>
+        <div class="product-body">
+          <h3 data-i18n="fertilizersTitle">Fertilizers &amp; Nutrients</h3>
+          <p data-i18n="fertilizersDesc">Complete range of organic and chemical fertilizers, micronutrients, and soil conditioners.</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img"><span>🛡️</span></div>
+        <div class="product-body">
+          <h3 data-i18n="cropTitle">Crop Protection</h3>
+          <p data-i18n="cropDesc">Insecticides, fungicides, herbicides, and bio-pesticides from leading brands.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- About -->
+<section id="about" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-tag" data-i18n="aboutUs">About Us</p>
+      <h2 class="section-title" data-i18n="aboutTitle">Serving Farmers Since Day One</h2>
+    </div>
+    <div class="about-content">
+      <p data-i18n="aboutP1">Shree Padmavati Krushi Aushadi Kendra is a trusted agricultural cooperative located on NH 4 Service Road, Gandhinagar, M K Hubli, Karnataka. We provide farmers with genuine, high-quality agricultural inputs at fair prices.</p>
+      <p data-i18n="aboutP2">From seeds and fertilizers to the latest crop protection solutions, we are committed to empowering farmers with the right products and expert guidance to maximize their harvest.</p>
+    </div>
+  </div>
+</section>
+<!-- Contact -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-tag" data-i18n="getInTouch">Get In Touch</p>
+      <h2 class="section-title" data-i18n="visitStore">Visit Our Store</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <h3 data-i18n="address">Address</h3>
+        <p data-i18n="addressVal">NH 4, Service Road,
+Gandhinagar, M K Hubli,
+Karnataka 591118, India</p>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+        <h3 data-i18n="phone">Phone</h3>
+        <a href="tel:+918550047165">+91 85500 47165</a>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <h3 data-i18n="hours">Hours</h3>
+        <p data-i18n="hoursVal">Open Daily
+7:00 AM – 9:00 PM</p>
+      </div>
+    </div>
+    <div class="map-wrap">
+      <iframe title="Store Location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3843.6!2d75.1!3d15.4!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTXCsDI0JzAwLjAiTiA3NcKwMDYnMDAuMCJF!5e0!3m2!1sen!2sin!4v1700000000000" width="100%" height="350" style="border:0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <h3>Shree Padmavati Krushi Aushadi Kendra</h3>
+    <p class="tagline" data-i18n="footerTagline">Quality agricultural solutions for better farming.</p>
+    <p class="copy">&copy; 2026 Shree Padmavati Krushi Aushadi Kendra. All rights reserved.</p>
+  </div>
+</footer>
+<!-- WhatsApp FAB -->
+<a href="https://wa.me/918550047165" target="_blank" rel="noopener noreferrer" class="whatsapp-fab" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.962A15.91 15.91 0 0016.004 32C24.826 32 32 24.826 32 16.004 32 7.176 24.826 0 16.004 0zm9.31 22.606c-.39 1.1-2.286 2.1-3.15 2.154-.794.05-1.536.378-5.176-1.086-4.396-1.768-7.17-6.27-7.39-6.562-.216-.288-1.77-2.354-1.77-4.492 0-2.136 1.122-3.186 1.52-3.62.398-.432.868-.54 1.158-.54.288 0 .578.004.83.016.266.012.624-.1.976.746.362.874 1.23 3.012 1.338 3.23.108.216.18.47.036.758-.144.288-.216.468-.432.72-.216.252-.456.562-.65.754-.216.216-.442.45-.19.882.252.432 1.122 1.852 2.41 3 1.656 1.476 3.054 1.932 3.486 2.148.432.216.684.18.936-.108.252-.288 1.08-1.26 1.368-1.692.288-.432.576-.36.972-.216.396.144 2.514 1.188 2.946 1.404.432.216.72.324.828.504.108.18.108 1.044-.282 2.144z"/></svg>
+</a>
+<!-- Language Toggle Script -->
+<script>
+const translations = {
+  en: {
+    tagline:"Your Trusted Agricultural Partner",heroTitle1:"Shree Padmavati",heroTitle2:"Krushi Aushadi Kendra",
+    heroDesc:"Quality seeds, fertilizers, pesticides & agricultural solutions for farmers in Gandhinagar, M K Hubli & surrounding areas.",
+    exploreProducts:"Explore Products",visitUs:"Visit Us",callNow:"Call Now",products:"Products",about:"About",contact:"Contact",
+    googleRating:"Google Rating",happyReviews:"Happy Reviews",openDaily:"Open Daily",serviceRoad:"Service Road",
+    whatWeOffer:"What We Offer",ourProducts:"Our Products",
+    seedsTitle:"Seeds & Planting",seedsDesc:"High-quality certified seeds for all major crops — paddy, wheat, pulses, vegetables and more.",
+    fertilizersTitle:"Fertilizers & Nutrients",fertilizersDesc:"Complete range of organic and chemical fertilizers, micronutrients, and soil conditioners.",
+    cropTitle:"Crop Protection",cropDesc:"Insecticides, fungicides, herbicides, and bio-pesticides from leading brands.",
+    aboutUs:"About Us",aboutTitle:"Serving Farmers Since Day One",
+    aboutP1:"Shree Padmavati Krushi Aushadi Kendra is a trusted agricultural cooperative located on NH 4 Service Road, Gandhinagar, M K Hubli, Karnataka. We provide farmers with genuine, high-quality agricultural inputs at fair prices.",
+    aboutP2:"From seeds and fertilizers to the latest crop protection solutions, we are committed to empowering farmers with the right products and expert guidance to maximize their harvest.",
+    getInTouch:"Get In Touch",visitStore:"Visit Our Store",address:"Address",
+    addressVal:"NH 4, Service Road,\nGandhinagar, M K Hubli,\nKarnataka 591118, India",
+    phone:"Phone",hours:"Hours",hoursVal:"Open Daily\n7:00 AM – 9:00 PM",
+    footerTagline:"Quality agricultural solutions for better farming."
+  },
+  kn: {
+    tagline:"ನಿಮ್ಮ ನಂಬಿಗಸ್ಥ ಕೃಷಿ ಪಾಲುದಾರ",heroTitle1:"ಶ್ರೀ ಪದ್ಮಾವತಿ",heroTitle2:"ಕೃಷಿ ಔಷಧಿ ಕೇಂದ್ರ",
+    heroDesc:"ಗಾಂಧಿನಗರ, ಎಂ ಕೆ ಹುಬ್ಬಳ್ಳಿ ಮತ್ತು ಸುತ್ತಮುತ್ತಲಿನ ಪ್ರದೇಶಗಳ ರೈತರಿಗಾಗಿ ಗುಣಮಟ್ಟದ ಬೀಜಗಳು, ರಸಗೊಬ್ಬರಗಳು, ಕೀಟನಾಶಕಗಳು ಮತ್ತು ಕೃಷಿ ಪರಿಹಾರಗಳು.",
+    exploreProducts:"ಉತ್ಪನ್ನಗಳನ್ನು ನೋಡಿ",visitUs:"ನಮ್ಮನ್ನು ಭೇಟಿ ಮಾಡಿ",callNow:"ಕರೆ ಮಾಡಿ",products:"ಉತ್ಪನ್ನಗಳು",about:"ನಮ್ಮ ಬಗ್ಗೆ",contact:"ಸಂಪರ್ಕ",
+    googleRating:"ಗೂಗಲ್ ರೇಟಿಂಗ್",happyReviews:"ಸಂತೋಷದ ವಿಮರ್ಶೆಗಳು",openDaily:"ಪ್ರತಿದಿನ ತೆರೆದಿರುತ್ತದೆ",serviceRoad:"ಸರ್ವಿಸ್ ರೋಡ್",
+    whatWeOffer:"ನಾವು ಏನು ನೀಡುತ್ತೇವೆ",ourProducts:"ನಮ್ಮ ಉತ್ಪನ್ನಗಳು",
+    seedsTitle:"ಬೀಜಗಳು ಮತ್ತು ನಾಟಿ",seedsDesc:"ಎಲ್ಲಾ ಪ್ರಮುಖ ಬೆಳೆಗಳಿಗೆ ಉತ್ತಮ ಗುಣಮಟ್ಟದ ಪ್ರಮಾಣೀಕೃತ ಬೀಜಗಳು — ಭತ್ತ, ಗೋಧಿ, ಬೇಳೆಕಾಳು, ತರಕಾರಿಗಳು ಮತ್ತು ಹೆಚ್ಚಿನವು.",
+    fertilizersTitle:"ರಸಗೊಬ್ಬರಗಳು ಮತ್ತು ಪೋಷಕಾಂಶಗಳು",fertilizersDesc:"ಸಾವಯವ ಮತ್ತು ರಾಸಾಯನಿಕ ರಸಗೊಬ್ಬರಗಳು, ಸೂಕ್ಷ್ಮ ಪೋಷಕಾಂಶಗಳು ಮತ್ತು ಮಣ್ಣಿನ ಸುಧಾರಕಗಳ ಸಂಪೂರ್ಣ ಶ್ರೇಣಿ.",
+    cropTitle:"ಬೆಳೆ ಸಂರಕ್ಷಣೆ",cropDesc:"ಪ್ರಮುಖ ಬ್ರ್ಯಾಂಡ್‌ಗಳಿಂದ ಕೀಟನಾಶಕಗಳು, ಶಿಲೀಂಧ್ರನಾಶಕಗಳು, ಕಳೆನಾಶಕಗಳು ಮತ್ತು ಜೈವಿಕ ಕೀಟನಾಶಕಗಳು.",
+    aboutUs:"ನಮ್ಮ ಬಗ್ಗೆ",aboutTitle:"ಮೊದಲ ದಿನದಿಂದ ರೈತರ ಸೇವೆಯಲ್ಲಿ",
+    aboutP1:"ಶ್ರೀ ಪದ್ಮಾವತಿ ಕೃಷಿ ಔಷಧಿ ಕೇಂದ್ರವು ಕರ್ನಾಟಕದ ಎಂ ಕೆ ಹುಬ್ಬಳ್ಳಿಯ ಗಾಂಧಿನಗರ, ಎನ್‌ಎಚ್ 4 ಸರ್ವಿಸ್ ರೋಡ್‌ನಲ್ಲಿರುವ ವಿಶ್ವಾಸಾರ್ಹ ಕೃಷಿ ಸಹಕಾರ ಸಂಘವಾಗಿದೆ. ನಾವು ರೈತರಿಗೆ ನ್ಯಾಯಯುತ ಬೆಲೆಯಲ್ಲಿ ಅಸಲಿ, ಉತ್ತಮ ಗುಣಮಟ್ಟದ ಕೃಷಿ ಒಳಸುರಿಯುವಿಕೆಗಳನ್ನು ಒದಗಿಸುತ್ತೇವೆ.",
+    aboutP2:"ಬೀಜಗಳು ಮತ್ತು ರಸಗೊಬ್ಬರಗಳಿಂದ ಹಿಡಿದು ಇತ್ತೀಚಿನ ಬೆಳೆ ಸಂರಕ್ಷಣಾ ಪರಿಹಾರಗಳವರೆಗೆ, ರೈತರ ಫಸಲನ್ನು ಹೆಚ್ಚಿಸಲು ಸರಿಯಾದ ಉತ್ಪನ್ನಗಳು ಮತ್ತು ತಜ್ಞ ಮಾರ್ಗದರ್ಶನದೊಂದಿಗೆ ಸಬಲಗೊಳಿಸಲು ನಾವು ಬದ್ಧರಾಗಿದ್ದೇವೆ.",
+    getInTouch:"ಸಂಪರ್ಕಿಸಿ",visitStore:"ನಮ್ಮ ಅಂಗಡಿಗೆ ಭೇಟಿ ನೀಡಿ",address:"ವಿಳಾಸ",
+    addressVal:"ಎನ್‌ಎಚ್ 4, ಸರ್ವಿಸ್ ರೋಡ್,\nಗಾಂಧಿನಗರ, ಎಂ ಕೆ ಹುಬ್ಬಳ್ಳಿ,\nಕರ್ನಾಟಕ 591118, ಭಾರತ",
+    phone:"ದೂರವಾಣಿ",hours:"ಸಮಯ",hoursVal:"ಪ್ರತಿದಿನ ತೆರೆದಿರುತ್ತದೆ\nಬೆಳಿಗ್ಗೆ 7:00 – ರಾತ್ರಿ 9:00",
+    footerTagline:"ಉತ್ತಮ ಕೃಷಿಗಾಗಿ ಗುಣಮಟ್ಟದ ಕೃಷಿ ಪರಿಹಾರಗಳು."
+  }
+};
+let currentLang = "en";
+function toggleLang() {
+  currentLang = currentLang === "en" ? "kn" : "en";
+  const t = translations[currentLang];
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    if (t[key]) el.textContent = t[key];
+  });
+  document.getElementById("enLabel").className = currentLang === "en" ? "" : "inactive";
+  document.getElementById("knLabel").className = currentLang === "kn" ? "" : "inactive";
+}
+</script>
+</body>
+</html>
